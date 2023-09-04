@@ -51,3 +51,4 @@ module.exports = {
     - where js is used in pure havascript projects.
 - Then import the Navbar into the App.js
 - Next install react icons by `npm install react-icons`
+- Then start writing code on navbar.jsx
