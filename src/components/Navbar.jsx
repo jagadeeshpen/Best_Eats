@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {AiFillTag, AiOutlineClose, AiOutlineMenu, AiOutlineSearch} from 'react-icons/ai'
 import {BsFillCartFill, BsFillSaveFill} from 'react-icons/bs'
 import {TbTruckDelivery} from 'react-icons/tb'
@@ -6,13 +6,14 @@ import {MdFavorite, MdHelp} from 'react-icons/md'
 import {FaWallet, FaUserFriends} from 'react-icons/fa'
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false)
   return (
     <div className = 'max-w-[1366px] mx-auto flex justify-between items-center p-4'>
         {/* [] are used to add the coustem value,
         p-4 == 1rem */}
         {/* left side */}
         <div className='flex items-center'>
-            <div className='cursor-pointer'>
+            <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
             <AiOutlineMenu size={30}/>
             </div>
             <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2'>Best 
