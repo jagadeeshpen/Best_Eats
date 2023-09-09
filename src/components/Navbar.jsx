@@ -36,6 +36,7 @@ const Navbar = () => {
 
         {/* nav bar for mobile */}
         {/* overlay */}
+        {nav ? :}
         <div className='bg-black/80 fixed w-full h-screen z-10 top-0 left-0'>
             
             {/* side drawer menu */}
